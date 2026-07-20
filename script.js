@@ -100,3 +100,59 @@ topBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+async function loadTestimonials() {
+
+    const container = document.getElementById("testimonial-list");
+
+    if (!container) return;
+
+    try {
+
+        const response = await fetch("data/testimonials.json");
+
+        const data = await response.json();
+
+        container.innerHTML = "";
+
+        data.testimonials.forEach(item => {
+
+            container.innerHTML += `
+
+            <section class="testimonial-section">
+
+                <div class="testimonial-premium">
+
+                    <div class="testimonial-image">
+                        <img src="${item.image}" alt="${item.name}">
+                    </div>
+
+                    <div class="testimonial-content">
+
+                        <h2>${item.name}</h2>
+
+                        <h4>${item.designation}</h4>
+
+                        <div class="quote-mark">“</div>
+
+                        <p>${item.review}</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            `;
+
+        });
+
+    } catch (error) {
+
+        container.innerHTML = "<p>Unable to load testimonials.</p>";
+        console.error(error);
+
+    }
+
+}
+
+loadTestimonials();

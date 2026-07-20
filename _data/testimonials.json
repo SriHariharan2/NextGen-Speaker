@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "name": "Gargi",
+      "designation": "Content Creator, VFX Industry",
+      "review": "Thank you, Priyadharshini, for being my personal communication and public speaking coach. Your coaching greatly improved my confidence and communication skills.",
+      "image": "/assets/client1.png"
+    },
+    {
+      "name": "Rajesh",
+      "designation": "Civil Engineer",
+      "review": "Joining Priyadharshini Madam's communication coaching program has been one of the most valuable decisions for my professional growth.",
+      "image": "/assets/client2.png"
+    },
+    {
+      "name": "Dolley Zwothe Thibedi",
+      "designation": "Candidate Natural Scientist | South Africa",
+      "review": "The coaching sessions helped me improve speaking confidence, communication clarity and professional interactions.",
+      "image": "/assets/client3.png"
+    }
+  ]
+}
