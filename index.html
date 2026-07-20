@@ -149,5 +149,37 @@
   © 2026 NextGen Speaker | All Rights Reserved
 </footer>
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.init();
+
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      // Login redirect
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+
+      // Invitation
+      if (window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+
+      // Password recovery
+      if (window.location.hash.includes("recovery_token")) {
+        window.netlifyIdentity.open("recovery");
+      }
+
+      // Email confirmation
+      if (window.location.hash.includes("confirmation_token")) {
+        window.netlifyIdentity.open();
+      }
+    }
+  });
+}
+</script>
+
 </body>
 </html>
