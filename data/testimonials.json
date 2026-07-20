@@ -17,6 +17,12 @@
       "designation": "Candidate Natural Scientist | South Africa",
       "review": "The coaching sessions helped me improve speaking confidence, communication clarity and professional interactions.",
       "image": "/assets/client3.png"
+    },
+    {
+      "name": "Sri",
+      "review": "Good ",
+      "image": "/assets/uploads/test.jpg",
+      "designation": "Student"
     }
   ]
 }
