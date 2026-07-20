@@ -1,13 +1,14 @@
-testimonials:
-  - name: Gargi
-    designation: Student
-    review: Communication coaching changed my confidence completely.
-    image: /assets/client1.png
-  - name: Rajesh
-    designation: Parent
-    review: My son's public speaking has improved tremendously.
-    image: /assets/client2.png
-  - name: Sri
-    designation: Student testing
-    review: Communication coaching changed my confidence completely.
-    image: /assets/uploads/test.jpg
+[
+  {
+    "name": "Gargi",
+    "designation": "Content Creator, VFX Industry",
+    "review": "Thank you, Priyadharshini, for being my personal communication and public speaking coach.",
+    "image": "assets/client1.png"
+  },
+  {
+    "name": "Rajesh",
+    "designation": "Civil Engineer",
+    "review": "Joining Priyadharshini Madam's communication coaching program has been one of the best decisions.",
+    "image": "assets/client2.png"
+  }
+]
